@@ -1,0 +1,59 @@
+{
+  "name": "react-multi-segment-progress",
+  "version": "1.0.0",
+  "description": "A React progress bar component that supports multiple segments with overlapping effect",
+  "type": "module",
+  "main": "dist/react-multi-segment-progress.umd.js",
+  "module": "dist/react-multi-segment-progress.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "path": "^0.12.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite-plugin-dts": "^4.3.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.15.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.14",
+    "globals": "^15.12.0",
+    "typescript": "~5.6.2",
+    "typescript-eslint": "^8.15.0",
+    "vite": "^6.0.1"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "keywords": [
+    "react",
+    "progress",
+    "progress-bar",
+    "segmented",
+    "multi-segment"
+  ],
+  "author": "David Arozarena",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darozarena/react-multi-segment-progress.git"
+  },
+  "bugs": {
+    "url": "https://github.com/darozarena/react-multi-segment-progress/issues"
+  },
+  "homepage": "https://github.com/darozarena/react-multi-segment-progress#readme"
+}

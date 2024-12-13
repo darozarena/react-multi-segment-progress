@@ -1,0 +1,13 @@
+.multi-segmented-progress-wrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.progress-segment {
+  position: absolute;
+  cursor: pointer;
+  height: 100%;
+  transition: all 0.3s ease;
+}
