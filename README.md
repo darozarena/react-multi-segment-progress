@@ -1,8 +1,8 @@
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/darozarena)
-
 # React Multi Segment Progress
 
 ![Demo](https://github.com/user-attachments/assets/01a66846-9e83-4644-a9a0-fecae90ffc29)
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/darozarena)
 
 A React progress bar component that supports multiple segments with overlapping effect. Perfect for showing multiple progress states in a single bar.
 
