@@ -1,5 +1,7 @@
 # React Multi Segment Progress
 
+![Demo](https://github.com/user-attachments/assets/01a66846-9e83-4644-a9a0-fecae90ffc29)
+
 A React progress bar component that supports multiple segments with overlapping effect. Perfect for showing multiple progress states in a single bar.
 
 ## Installation
