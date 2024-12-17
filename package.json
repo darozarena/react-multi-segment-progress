@@ -14,8 +14,7 @@
     "clean": "rm -rf dist",
     "build": "npm run clean && tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "publish": "npm run build && npm publish"
+    "preview": "vite preview"
   },
   "dependencies": {
     "path": "^0.12.7",
