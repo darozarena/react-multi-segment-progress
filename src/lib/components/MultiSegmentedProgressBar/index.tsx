@@ -29,7 +29,7 @@ export const MultiSegmentedProgressBar = ({
         const isFirst = index === 0;
 
         const segmentBorderRadius = isFirst
-          ? `${borderRadius}px ${borderRadius}px ${borderRadius}px ${borderRadius}px`
+          ? `${borderRadius}px`
           : `0 ${borderRadius}px ${borderRadius}px 0`;
 
         const segmentStyle = {
