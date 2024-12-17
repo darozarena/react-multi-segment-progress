@@ -1,4 +1,4 @@
-import { MultiSegmentedProgressBar } from "../lib";
+import { MultiSegmentProgress } from "../lib";
 
 const demoSegments = [
   {
@@ -51,16 +51,16 @@ const App = () => {
         gap: "20px",
       }}
     >
-      <h1>Multi Segmented Progress Bar Demo</h1>
+      <h1>Multi Segment Progress Bar Demo</h1>
 
       <div>
         <h3>Default bar</h3>
-        <MultiSegmentedProgressBar segments={demoSegments} borderRadius={8} />
+        <MultiSegmentProgress segments={demoSegments} borderRadius={8} />
       </div>
 
       <div>
         <h3>Taller bar (height: 40px, borderRadius: 24px)</h3>
-        <MultiSegmentedProgressBar
+        <MultiSegmentProgress
           segments={demoSegments}
           height={40}
           borderRadius={24}
@@ -69,7 +69,7 @@ const App = () => {
 
       <div>
         <h3>Without tooltips</h3>
-        <MultiSegmentedProgressBar
+        <MultiSegmentProgress
           segments={demoSegments}
           showTooltips={false}
           borderRadius={8}
@@ -78,7 +78,7 @@ const App = () => {
 
       <div>
         <h3>Without rounded corners</h3>
-        <MultiSegmentedProgressBar segments={demoSegments} />
+        <MultiSegmentProgress segments={demoSegments} />
       </div>
     </div>
   );

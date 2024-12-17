@@ -5,7 +5,7 @@ export interface Segment {
   label?: string;
 }
 
-export interface MultiSegmentedProgressBarProps {
+export interface MultiSegmentProgressProps {
   segments: Segment[];
   height?: number;
   showTooltips?: boolean;

@@ -1,5 +1,5 @@
-export { MultiSegmentedProgressBar } from "./components/MultiSegmentedProgressBar";
+export { MultiSegmentProgress } from "./components/MultiSegmentProgress";
 export type {
-  MultiSegmentedProgressBarProps,
+  MultiSegmentProgressProps,
   Segment,
-} from "./components/MultiSegmentedProgressBar/types";
+} from "./components/MultiSegmentProgress/types";

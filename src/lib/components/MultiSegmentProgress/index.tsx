@@ -1,13 +1,13 @@
-import { type MultiSegmentedProgressBarProps } from "./types";
+import { type MultiSegmentProgressProps } from "./types";
 import "./styles.css";
 
-export const MultiSegmentedProgressBar = ({
+export const MultiSegmentProgress = ({
   segments,
   height = 12,
   backgroundColor = "#E4E5E6",
   showTooltips = true,
   borderRadius = 0,
-}: MultiSegmentedProgressBarProps) => {
+}: MultiSegmentProgressProps) => {
   const wrapperStyle = {
     height: `${height}px`,
     borderRadius: `${borderRadius ? borderRadius : 0}px`,
@@ -15,7 +15,7 @@ export const MultiSegmentedProgressBar = ({
   };
 
   return (
-    <div className="multi-segmented-progress-wrapper" style={wrapperStyle}>
+    <div className="multi-segment-progress-wrapper" style={wrapperStyle}>
       {segments.map((segment, index) => {
         const prevPercentages = segments
           .slice(0, index)
