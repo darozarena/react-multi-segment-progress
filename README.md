@@ -15,7 +15,7 @@ npm install react-multi-segment-progress
 ## Usage
 
 ```tsx
-import { SegmentedProgressBar } from "react-multi-segment-progress";
+import { MultiSegmentProgress } from "react-multi-segment-progress";
 
 const MyComponent = () => {
   const segments = [
@@ -30,7 +30,7 @@ const MyComponent = () => {
   ];
 
   return (
-    <SegmentedProgressBar
+    <MultiSegmentProgress
       segments={segments}
       height={12}
       borderRadius={6}
@@ -80,7 +80,7 @@ const segments = [
   { id: "2", percentage: 60, color: "#d9d9d9", label: "Remaining" },
 ];
 
-<SegmentedProgressBar segments={segments} />;
+<MultiSegmentProgress segments={segments} />;
 ```
 
 ### With Custom Styling
@@ -92,7 +92,7 @@ const segments = [
   { id: "3", percentage: 25, color: "#13c2c2", label: "Phase 3" },
 ];
 
-<SegmentedProgressBar
+<MultiSegmentProgress
   segments={segments}
   height={20}
   borderRadius={10}
