@@ -1,5 +1,5 @@
+import { CSSProperties } from "react";
 import { type MultiSegmentProgressProps } from "./types";
-import "./styles.css";
 
 export const MultiSegmentProgress = ({
   segments,
@@ -8,14 +8,18 @@ export const MultiSegmentProgress = ({
   showTooltips = true,
   borderRadius = 0,
 }: MultiSegmentProgressProps) => {
-  const wrapperStyle = {
+  const wrapperStyle: CSSProperties = {
+    position: "relative",
+    display: "flex",
+    width: "100%",
+    overflow: "hidden",
     height: `${height}px`,
     borderRadius: `${borderRadius ? borderRadius : 0}px`,
     backgroundColor,
   };
 
   return (
-    <div className="multi-segment-progress-wrapper" style={wrapperStyle}>
+    <div style={wrapperStyle}>
       {segments.map((segment, index) => {
         const prevPercentages = segments
           .slice(0, index)
@@ -32,7 +36,11 @@ export const MultiSegmentProgress = ({
           ? `${borderRadius}px`
           : `0 ${borderRadius}px ${borderRadius}px 0`;
 
-        const segmentStyle = {
+        const segmentStyle: CSSProperties = {
+          position: "absolute",
+          cursor: "pointer",
+          height: "100%",
+          transition: "all 0.3s ease",
           left: `${prevPercentages}%`,
           width: `calc(${segment.percentage}% + ${extension}px)`,
           backgroundColor: segment.color,
@@ -43,7 +51,6 @@ export const MultiSegmentProgress = ({
         return (
           <div
             key={segment.id}
-            className="progress-segment"
             style={segmentStyle}
             title={showTooltips && segment.label ? segment.label : undefined}
           />
