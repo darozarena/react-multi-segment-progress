@@ -1,6 +1,6 @@
 {
   "name": "react-multi-segment-progress",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A React progress bar component that supports multiple segments with overlapping effect",
   "type": "module",
   "main": "dist/react-multi-segment-progress.umd.js",
