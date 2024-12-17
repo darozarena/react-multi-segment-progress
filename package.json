@@ -9,6 +9,13 @@
   "files": [
     "dist"
   ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/react-multi-segment-progress.es.js",
+      "require": "./dist/react-multi-segment-progress.umd.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "clean": "rm -rf dist",
