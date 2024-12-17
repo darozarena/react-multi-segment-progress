@@ -15,7 +15,7 @@
     "build": "npm run clean && tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "publish": "npm run build && npm publish"
+    "publish:package": "npm run build && npm publish"
   },
   "dependencies": {
     "path": "^0.12.7",
